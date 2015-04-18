@@ -1,23 +1,61 @@
 /* custom.css */
 h1, h2, h3 {
-	font-family: "Helvetica"
+	font-family: "Helvetica Neue"
 }
 
 h1 {
-	font-size: 5em;
+	font-size: 4em;
 	font-weight: 700;
-	color: #737373;
+	color: #434343;
 	letter-spacing: -2px;
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: 300;
-	color: #d3d3d3;
-	letter-spacing: -1px;
+	color: #434343;
+	line-height: 50px;
+	/*letter-spacing: 1px;*/	
+	/*word-spacing: 10px;*/
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.5em;
+	color: #838383;
+	line-height: 30px;
+
 }
 
 p {
-	font-size: 1.5em;
-	color: #535353;
+	font-size: 1em;
+	color: #434343;
+}
+
+.main-container {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+}
+
+.headshot {
+	margin-top: 12%;
+	margin-right: 5%;
+	float: left;
+	width: 20%;
+	border-radius: 50%;
+}
+
+.left-col, .right-col {
+	position: relative;
+}
+
+.left-col {
+	float:left;
+	width: 20%;
+}
+
+.right-col{
+	float: left;
+	width: 80%;
 }
