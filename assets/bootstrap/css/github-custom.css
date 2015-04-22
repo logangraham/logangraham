@@ -2,4 +2,26 @@
 	border-radius: 50%;
 	width: 15%;
 	min-width: 100px;
+	/*position: relative;*/
+	float:left;
+	/*margin: 0 auto;*/
+	margin-right: 3%;
+}
+
+.headshot-center {
+	border-radius: 50%;
+	width: 15%;
+	min-width: 150px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: -30px;
+}
+
+.greyed-out {
+	color: #b0b0b0;
+}
+
+.markdown-body {
+	padding: 30px;
+	background-color: rgb(249, 249, 249);
 }
