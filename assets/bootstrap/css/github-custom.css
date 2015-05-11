@@ -3,8 +3,8 @@
 	width: 15%;
 	min-width: 100px;
 	/*position: relative;*/
-	float:left;
-	/*margin: 0 auto;*/
+	/*	float:left;
+margin: 0 auto;*/
 	margin-right: 3%;
 }
 
@@ -24,4 +24,9 @@
 .markdown-body {
 	padding: 30px;
 	background-color: rgb(249, 249, 249);
+	/*border: 2px solid rgb(240, 240, 240);*/
+}
+
+.markdown-body p {
+	/*font-size: 0.5em;*/
 }
