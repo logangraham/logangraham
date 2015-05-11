@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -13,22 +13,34 @@
 
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/github.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/github.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/github-custom.css">
-	<style>
-		body {
-			min-width: 200px;
-			max-width: 700px;
-			margin: 0 auto;
-			padding: 30px;
-		}
-	</style>
+    <style>
+        body {
+            min-width: 200px;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+    </style>
 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+
+<!--
     <script> $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
     </script>
 
+    <script>
+        $(document).ready(function(){
+            $("#tooltip-ex a").tooltip({
+                placement : 'top'
+            });
+        });
+    </script>
+-->
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -52,7 +64,7 @@
     <p>I'm a social entrepreneur, student, and aspiring data scientist.</p>
     <p>What keeps me up at night is figuring out how to apply economic & data-driven approaches to big social problems – health, poverty, security. In September I'll start at the University of Oxford as a Rhodes Scholar.</p>
     <p>Recently, I've been building <a href="http://www.awakelabs.com" title="A wearable device that predicts meltdowns before they happen in kids with Autism" data-toggle="tooltip" data-placement="top"><strong>Reveal</strong></a>, <a href="http://www.yunusandyouth.com" title="A global fellowship for superstar young social entrepreneurs" data-toggle="tooltip" data-placement="top"><strong>Yunus&Youth</strong></a>, and <a href="http://www.awesomeitis.com" title="An online patient-to-patient mentoring platform, starting with Arthritis" data-toggle="tooltip" data-placement="top"><strong>Awesomeitis</strong></a>, all of which I founded or co-founded.</p>
-    <p>I've done research in Computational Auction/Game Theory & Labour Economics. I'm madly in love with the economics way of thinking as a force for discovery and dissection. I'm a DJ, amateur salsa dancer, and admirer of China.</p>
+    <p>I've done research in Computational Auction/Game Theory & Labour Economics. I'm madly in love with the economics way of thinking as a force for discovery and dissection. I'm a DJ, amateur salsa dancer, and admirer of China (my Chinese name is 雷罗庚).</p>
     <p>One day I want to see a world where:
         <ul>
             <li>Patients are just as powerful as doctors </li>
@@ -64,12 +76,13 @@
     <!-- </div> -->
 </div>
 </body>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="assets/bootstrap/js/tooltip.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="http://code.jquery.com/jquery.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
+<script>
+    $('a').tooltip();
+</script>
 </html>
 
 
