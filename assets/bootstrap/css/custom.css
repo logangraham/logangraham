@@ -13,8 +13,8 @@
 }
 
 body {
-    background-color: rgba(239, 239, 239, 0.3);
-    color: #313A42;
+    background-color: white;
+    color: #333;
     font-family: "Avenir";
     margin: 0 auto !important;
     padding-top: 5%;
