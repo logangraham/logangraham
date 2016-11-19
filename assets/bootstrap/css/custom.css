@@ -4,18 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-@font-face{
-    font-family:'Avenir';
-    src: url("https://cdn.ycombinator.com/fonts/c886ac4d-0476-43f2-859c-69521d566f36-c8e3ce1a.eot?#iefix");
-    src:url("https://cdn.ycombinator.com/fonts/c886ac4d-0476-43f2-859c-69521d566f36-c8e3ce1a.eot?#iefix") format("eot"),url("https://cdn.ycombinator.com/fonts/bfb11081-e571-43ad-bed9-8953cfd4133e.woff2") format("woff2"),url("https://cdn.ycombinator.com/fonts/e35493b4-782b-41f0-b3f0-b7e5d0ceab0b-7b05f688.woff") format("woff"),url("https://cdn.ycombinator.com/fonts/3441ac36-8e74-4708-8a0e-bc7eb293b307-395f4283.ttf") format("truetype"), url("https://cdn.ycombinator.com/fonts/57fd8d3b-c855-4bd8-9e49-04ae9a760f9d-87d107b6.svg#svgAvenirLight") format("svg");
-    font-weight:normal;
-    font-style:normal;
-}
 
 body {
     background-color: white;
     color: #333;
-    font-family: "Avenir";
+    font-family: "Charter";
     margin: 0 auto !important;
     padding-top: 5%;
 }
@@ -39,8 +32,8 @@ body {
     }
 
     .info {
-	font-size: 18px;
-	line-height: 26px;
+	font-size: 1.2px;
+	line-height: 1.8px;
     }
 
     .right-column {
@@ -54,10 +47,10 @@ body {
 }
 
 .info {
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 1.7rem;
+    line-height: 3rem;
     margin-top: 0em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5rem;
 }
 
 .read-more, a.read-more:hover, a.read-more:visited {
