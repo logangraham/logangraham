@@ -53,13 +53,24 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.read-more, a.read-more:hover, a.read-more:visited {
+.read-more, a.read-more:visited {
     color: rgba(240, 118, 47, 1);
     /*font-size: 15px;*/
 }
 
 a.read-more:hover {
     font-weight: 500;
+}
+
+a:hover{
+    background-color: #337ab7;
+    color: white;
+    text-decoration: none;
+}
+
+a.read-more:hover {
+    background-color: rgba(240, 118, 47, 1);
+    color: white;
 }
 
 .groups-outer {
@@ -162,3 +173,4 @@ footer {
     text-align: right;
     }
 }
+
