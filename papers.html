@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,209 +8,446 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
     <title>Weekly Top ML Papers</title>
-
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/custom.css">
-
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
-
     <!-- GOOGLE ANALYTICS-->
-
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-51657413-3', 'auto');
-      ga('send', 'pageview');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-51657413-3', 'auto');
+    ga('send', 'pageview');
     </script>
-
 </head>
+
 <body>
-  <div class="row main-content container" style='width: 60%;'>
-    <p>I curate a weekly email of 10 or so highly interesting Machine Learning papers, and I send it to my lab. I thought it'd be interesting to put the repository here.</p>
-    <br>
-    <p><b><a href='https://goo.gl/forms/O2hbzgwFbKoOJTaI3'>You can sign up for the email here.</a></b></p>
-    <hr>
-    <h3>#27: AI is Going to Kill Everyone Edition</h3>
-    <p> Apologies for the grave title. Three very intriguing things have happened in the past few weeks around AI safety, and I recommend you give them a look and think for yourself where you stand. In other news: another TensorFlow release, a new Distill publication, a cookbook with potential, and the Chinese government's AI strategy.</p>
-    <br>
-    <h4>Interesting News and Links</h4>
-    <ul>
-      <li><b>"Humankind's Last Invention Ever":</b> three initiatives were launched to promote the development of beneficial AI and prevent the development of severely harmful AI:
-        <ul> 
-          <li> The Future of Life Institute released <a href='https://www.youtube.com/watch?v=9CO6M2HsoIA'>Slaughterbots</a>, a short film associated with <a href='AutonomousWeapons.org'>AutonomousWeapons.org</a>, to reveal how plausible a militarised AI future is. Extremely engaging video – if you like Black Mirror, you'll enjoy this.</li>
-          <li> Canadian researchers called for the Canadian government to join an international ban on the weaponization of artificial intelligence. Canadian/Canadian-related? <a href='https://techlaw.uottawa.ca/bankillerai#letter'>You can sign the letter here.</a></li>
-          <li>On November 3rd, researchers launched the <a href='https://www.montrealdeclaration-responsibleai.com/context'>Montreal Declaration for a Responsible Development of Artificial Intelligence.</a> You can contribute your thoughts through contributing a brief or answering a survey.</li>
+    <div class="row main-content container" style='width: 60%;'>
+        <p>I curate a weekly email of 10 or so highly interesting Machine Learning papers, and I send it to my lab. I thought it'd be interesting to put the repository here.</p>
+        <br>
+        <p><b><a href='https://goo.gl/forms/O2hbzgwFbKoOJTaI3'>You can sign up for the email here.</a></b></p>
+        <hr>
+        <h3>#28: Now You Can Publish in Nature So Mom Can Be Proud edition</h3>
+        <p>Hi Oxford AI/ML people,</p>
+        <p>First – from now on I'm putting editions of the WTMLP on <a href='www.logangraham.xyz/papers'>my website here</a>, after requests to be able to share it easily. Others can sign up on a link on that page. Hello to those who are joining us from outside of PARG! Second – send me any papers you release and I'll highlight Oxford-specific ones.</p>
+        <h4>Interesting News and Links</h4>
+        <ul>
+            <li><b>Hurray, more on the AI hype train: </b>Nature has announced <a href="https://mltrk.io/link/http%3A%2F%2Fnature.com%2Fnatmachintell%2F/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/http%253A%252F%252Fnature.com%252Fnatmachintell%252F/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081313000&amp;usg=AFQjCNFIUTgMwBL_nIFiDawF_uY8SE5-cA">it will be launching Nature Machine Intelligence</a>... <i>in 2019</i>. <a href="https://mltrk.io/link/https%3A%2F%2Ftwitter.com%2Fsearch%3Fq%3Dnature%2520machine%2520intelligence%26src%3Dtyah/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Ftwitter.com%252Fsearch%253Fq%253Dnature%252520machine%252520intelligence%2526src%253Dtyah/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081313000&amp;usg=AFQjCNH_wevYAF1rruIhV8Cv57_ikF_byg">ML Twitter responds</a>, somewhat derisively:</li>
+            <ul>
+                <li>It won't be open access, for <a href="https://mltrk.io/link/https%3A%2F%2Ftwitter.com%2FNatMachIntell%2Fstatus%2F933351457360961536/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Ftwitter.com%252FNatMachIntell%252Fstatus%252F933351457360961536/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081313000&amp;usg=AFQjCNEVIVSgAJOCBz_pWfZDIOEUMm0S4g">cost reasons </a>(yet JMLR does just fine - <a href="https://mltrk.io/link/http%3A%2F%2Fblogs.harvard.edu%2Fpamphlet%2F2012%2F03%2F06%2Fan-efficient-journal%2F/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/http%253A%252F%252Fblogs.harvard.edu%252Fpamphlet%252F2012%252F03%252F06%252Fan-efficient-journal%252F/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081313000&amp;usg=AFQjCNEbRQzuinLWJttuno97s-ByiUez7Q">fascinating analysis here</a>). Suggestion: either you join as editor and turn it open access, or you automate away open access costs. Up to you.</li>
+                <li><a href="https://mltrk.io/link/https%3A%2F%2Ftwitter.com%2Ffhuszar%2Fstatus%2F933735075778310144/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Ftwitter.com%252Ffhuszar%252Fstatus%252F933735075778310144/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081313000&amp;usg=AFQjCNEepDipcFgMinAA40WwIlnpBrJrcw">&quot;Is January 2019 pre- or post-singularity?&quot;</a></li>
+                <li>Would you personally embargo submitting to Nature MI for the sake of open access?</li>
+            </ul>
+            <li><b>The British AI Empire: </b><a href="https://mltrk.io/link/http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Ftechnology-42081703/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/http%253A%252F%252Fwww.bbc.co.uk%252Fnews%252Ftechnology-42081703/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081313000&amp;usg=AFQjCNE8-NEurL7l7RvT568SnyZO1mt58g">UK Autumn Budget to pump £75m into AI</a> and allow funding for up to 200 new PhD students a year, and will create a <a href="https://mltrk.io/link/https%3A%2F%2Fwww.cser.ac.uk%2Fnews%2Fwelcoming-new-uk-ai-centre%2F/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Fwww.cser.ac.uk%252Fnews%252Fwelcoming-new-uk-ai-centre%252F/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081313000&amp;usg=AFQjCNHgcjIZlTIrqyRS1DQp1eFGn6GXrQ">Centre for Data Ethics and Innovation.</a></li>
+            <ul>
+                <li>Meanwhile, for comparison... <a href="https://mltrk.io/link/https%3A%2F%2Fwww.reuters.com%2Farticle%2Fus-sensetime-ipo-exclusive%2Fexclusive-chinas-sensetime-plans-ipo-u-s-rd-center-as-early-as-2018-idUSKBN1DN0FY/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Fwww.reuters.com%252Farticle%252Fus-sensetime-ipo-exclusive%252Fexclusive-chinas-sensetime-plans-ipo-u-s-rd-center-as-early-as-2018-idUSKBN1DN0FY/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081313000&amp;usg=AFQjCNEPSX1i9XD7Hjak5pEFGuM5AX3c0g">SenseTime</a>, a (single) Chinese computer vision company worth <b>~$2B (!)</b> is planning an IPO + US expansion. Are the UK government&#39;s actions paltry or efficient?</li>
+                <ul>
+                    <li><i>Interestingly, SenseTime has a proprietary competitor to TensorFlow called &quot;Parrots&quot;.</i></li>
+                </ul>
+            </ul>
+            <li><b>ML jobs continue to be unlikely to be automated: </b>OpenAI has announced <a href="https://mltrk.io/link/https%3A%2F%2Fopenai.com%2Fjobs/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Fopenai.com%252Fjobs/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNH-V5jZRtRTRocjpE23dBkLMIpVtg">a few new open positions</a>, including for a Fellow.</li>
+            <li><b>Did you happen to buy a painting for $450m <a href="https://mltrk.io/link/https%3A%2F%2Fwww.theguardian.com%2Fartanddesign%2F2017%2Fnov%2F15%2Fleonardo-da-vinci-salvator-mundi-auction/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Fwww.theguardian.com%252Fartanddesign%252F2017%252Fnov%252F15%252Fleonardo-da-vinci-salvator-mundi-auction/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNEFWvyv6Hk2kJ6kvwMz1Tu0dFB-tw">last week</a> and not know if it&#39;s a forgery? </b><a href="https://mltrk.io/link/https%3A%2F%2Fwww.technologyreview.com%2Fs%2F609524%2Fthis-ai-can-spot-art-forgeries-by-looking-at-one-brushstroke/HcxHN2XVpMe95iyMqi3D" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Fwww.technologyreview.com%252Fs%252F609524%252Fthis-ai-can-spot-art-forgeries-by-looking-at-one-brushstroke/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNGA3CThpIiHPlTjpoSKcF2Sr3iDUg">ML can help you with your expensive tastes.</a></li>
         </ul>
-      </li>
-      <li><b>Getting deep on the phone:</b> Google released <a href='https://developers.googleblog.com/2017/11/announcing-tensorflow-lite.html'>TensorFlow Lite</a>, which can compile pre-trained TensorFlow models for Android and iOS, which should speed-up mobile deep learning applications.</li>
-      <li><b>Picture books for adults:</b> <a href='https://distill.pub/2017/feature-visualization/'>a great new Distill publication</a> explores how NN's "build up their understanding of images."</li>
-      <li><b>Cooking with ML:</b> if you follow/know of Ferenc Huszar (his blog is recommended), he's just put out <a href='http://www.inference.vc/design-patterns/'>a short note describing </a> to various types of learning barriers, which is short and nice as a refresher.</li>
-      <li><b>Central planning for AI:</b> the Chinese State Council released  "A Next Generation Artificial Intelligence Development Plan" back in July, which highlights 8 core technologies it aims to build worth the read – <a href='https://na-production.s3.amazonaws.com/documents/translation-fulltext-8.1.17.pdf'>see page 9 here.</a></li>
-    </ul>
-    <br>
-    <table style="box-sizing:border-box;border-collapse:collapse;display:block;width:888px;overflow:auto;word-break:keep-all;color:rgb(51,51,51);font-size:16px;margin-top:0px;margin-bottom:0px">
-      <thead style="box-sizing:border-box">
-          <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
-              <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">n</font>
-              </th>
-              <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Title</font>
-              </th>
-              <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Author(s)</font>
-              </th>
-          </tr>
-      </thead>
-      <tbody style="box-sizing:border-box">
-          <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">1</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.03845v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.03845v1&amp;source=gmail&amp;ust=1511450758048000&amp;usg=AFQjCNEr7R4axNsvB6Yndb-lfam6nlA77A">
-                      <font size="2">GPflowOpt: A Bayesian Optimization Library using TensorFlow</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Knudde et al.</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">2</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.05477v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.05477v1&amp;source=gmail&amp;ust=1511450758048000&amp;usg=AFQjCNH5SOWkQ5VLXsw4DR8gaRzoClvZSw">
-                      <font size="2">A Convex Parametrization of a New Class of Universal Kernel Functions for use in Kernel Learning</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Colbert &amp; Peet</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">3</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.05363v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.05363v1&amp;source=gmail&amp;ust=1511450758048000&amp;usg=AFQjCNGnuww5Ewzu4PDgM--ExFW7N-rhkA">
-                      <font size="2">Kernel Conditional Exponential Family</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Arbel &amp; Gretton</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">4</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.04994v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.04994v1&amp;source=gmail&amp;ust=1511450758048000&amp;usg=AFQjCNHLrGqIoEg2WEYwZyrEDl3aEXki_w">
-                      <font size="2">Prediction Under Uncertainty with Error-Encoding Networks</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Henaff et al.</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">5</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.04574v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.04574v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNEUbuKoadL9pLca3b5qj_bgC21kWQ">
-                      <font size="2">Learning Explanatory Rules from Noisy Data</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Evans &amp; Grefenstette</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">6</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.04340v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.04340v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNEGklk7Y36xRLs0VGXxQSN35kwTug">
-                      <font size="2">Data Augmentation Generative Adversarial Networks</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Antoniou et al.</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">7</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1709.01507v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1709.01507v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNHOmbnSuLyvLp21fJXcgkZ21YqDrg">
-                      <font size="2">Squeeze-and-Excitation Networks</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Hu et al.</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">8</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.03946v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.03946v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNGaUnRUvsvp8wNBaJVPNkhi5yuC4g">
-                      <font size="2">Bayesian Paragraph Vectors</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Ji et al.</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">9</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.04755v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.04755v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNEW1UXgfXTFqWRtDgd1eaDvH5A60A">
-                      <font size="2">ACtuAL: Actor-Critic Under Adversarial Learning</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Goyal et al.</font>
-              </td>
-          </tr>
-          <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">10</font>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <a href="https://arxiv.org/abs/1711.05355v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.05355v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNE_bXWAVUeb9mBD23sMi675Mwm-VQ">
-                      <font size="2">Automatic Conflict Detection in Police Body-Worn Video</font>
-                  </a>
-              </td>
-              <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
-                  <font size="2">Letcher et al.</font>
-              </td>
-          </tr>
-      </tbody>
-    </table>
-
-
-
-  </div>
+        <br>
+        <table style="box-sizing:border-box;border-collapse:collapse;display:block;width:888px;overflow:auto;word-break:keep-all;color:rgb(51,51,51);font-family:&quot;Helvetica Neue&quot;,Helvetica,&quot;Segoe UI&quot;,Arial,freesans,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;;margin-top:0px;margin-bottom:0px">
+            <thead style="box-sizing:border-box">
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">n</font>
+                    </th>
+                    <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Title</font>
+                    </th>
+                    <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Author(s)</font>
+                    </th>
+                </tr>
+            </thead>
+            <tbody style="box-sizing:border-box">
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">1</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.08770v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.08770v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNHnnFozn8O08Hx4H3MXH-BOXilvvA">
+                            <font size="1">Diversity-Promoting Bayesian Learning of Latent Variable Models</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Xie et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">2</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.06494v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.06494v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNFWdvrAJjmx3em8aq434cIRDf0Hug">
+                            <font size="1">Improved Bayesian Compression</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Federici et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">3</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.06006v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.06006v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNEjqbxJBSNfODMc0aChV5pWh_qpSw">
+                            <font size="1">Hindsight policy gradients</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Rauber et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">4</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.08946/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.08946/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNG1bW2NpBXKoOdxDB-naT3NZJxCgQ">
+                            <font size="1">Action Branching Architectures for Deep Reinforcement Learning</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Tavakoli et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">5</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.07971v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.07971v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNHc9FAkxmcmbkNvFfkT89PwSQBN2A">
+                            <font size="1">Non-local Neural Networks</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Wang et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">6</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.08141v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.08141v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNGCduLPD8sHfjiM2JqnoNwF8IbwwA">
+                            <font size="1">Shift: A Zero FLOP, Zero Parameter Alternative to Spatial Convolutions</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Wu et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">7</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.08393v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.08393v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNGCFY9xRD1WsAKRtfN6IvGOSUxTzg">
+                            <font size="1">BlockDrop: Dynamic Inference Paths in Residual Networks</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Wu et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">8</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.07970v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.07970v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNFHl6aJGbL7twoWcz_9GX0S6u4huw">
+                            <font size="1">Deep Learning for Physical Processes: Incorporating Prior Scientific Knowledge</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Bezenac et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">9</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.07607v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.07607v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNEZSdYw63MGCaTxvmKHTbxkewXpsg">
+                            <font size="1">Knowledge Concentration: Learning 100K Object Classifiers in a Single CNN</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Gao et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">10</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.08378v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.08378v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNEyPyR6HlrpAlZL0mQ8pME2aqxthg">
+                            <font size="1">Building Machines that Learn and Think for Themselves: Commentary on Lake et al., Behavioral and Brain Sciences, 2017</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Botvinick et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">11</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.06178v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.06178v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNHgLXptcv_AtDaD8P1wp2VdmVFARA">
+                            <font size="1">Beyond Sparsity: Tree Regularization of Deep Models for Interpretability</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Wu et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">12</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.07758v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.07758v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081314000&amp;usg=AFQjCNHztlPGIdanU0bpX4VNjzuU-czNxg">
+                            <font size="1">Understanding Deep Learning Generalization by Maximum Entropy</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Zheng et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">13</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.06642v1/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.06642v1/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081315000&amp;usg=AFQjCNEryM2UDnqxYexVXd93FaC3YvAUQA">
+                            <font size="1">Nonparametric independence testing via mutual information</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Berrett &amp; Samworth</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">14</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.07520/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.07520/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081315000&amp;usg=AFQjCNFpZEt2kFyDcrufht615wRUAg4-HQ">
+                            <font size="1">Dropping Activation Outputs with Localized First-layer Deep Network for Enhancing User Privacy and Data Security</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Dong et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">15</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://mltrk.io/link/https%3A%2F%2Farxiv.org%2Fabs%2F1711.06892/HcxHN2XVpMe95iyMqi3D" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://mltrk.io/link/https%253A%252F%252Farxiv.org%252Fabs%252F1711.06892/HcxHN2XVpMe95iyMqi3D&amp;source=gmail&amp;ust=1511969081315000&amp;usg=AFQjCNFXvredgGVzKYd0DzP6v2qKoY3FWA">
+                            <font size="1">Learning to select computations</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="1">Lieder et al.</font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <br>
+        <br>
+        <h3>#27: AI is Going to Kill Everyone Edition</h3>
+        <p> Apologies for the grave title. Three very intriguing things have happened in the past few weeks around AI safety, and I recommend you give them a look and think for yourself where you stand. In other news: another TensorFlow release, a new Distill publication, a cookbook with potential, and the Chinese government's AI strategy.</p>
+        <br>
+        <h4>Interesting News and Links</h4>
+        <ul>
+            <li><b>"Humankind's Last Invention Ever":</b> three initiatives were launched to promote the development of beneficial AI and prevent the development of severely harmful AI:
+                <ul>
+                    <li> The Future of Life Institute released <a href='https://www.youtube.com/watch?v=9CO6M2HsoIA'>Slaughterbots</a>, a short film associated with <a href='AutonomousWeapons.org'>AutonomousWeapons.org</a>, to reveal how plausible a militarised AI future is. Extremely engaging video – if you like Black Mirror, you'll enjoy this.</li>
+                    <li> Canadian researchers called for the Canadian government to join an international ban on the weaponization of artificial intelligence. Canadian/Canadian-related? <a href='https://techlaw.uottawa.ca/bankillerai#letter'>You can sign the letter here.</a></li>
+                    <li>On November 3rd, researchers launched the <a href='https://www.montrealdeclaration-responsibleai.com/context'>Montreal Declaration for a Responsible Development of Artificial Intelligence.</a> You can contribute your thoughts through contributing a brief or answering a survey.</li>
+                </ul>
+            </li>
+            <li><b>Getting deep on the phone:</b> Google released <a href='https://developers.googleblog.com/2017/11/announcing-tensorflow-lite.html'>TensorFlow Lite</a>, which can compile pre-trained TensorFlow models for Android and iOS, which should speed-up mobile deep learning applications.</li>
+            <li><b>Picture books for adults:</b> <a href='https://distill.pub/2017/feature-visualization/'>a great new Distill publication</a> explores how NN's "build up their understanding of images."</li>
+            <li><b>Cooking with ML:</b> if you follow/know of Ferenc Huszar (his blog is recommended), he's just put out <a href='http://www.inference.vc/design-patterns/'>a short note describing </a> to various types of learning barriers, which is short and nice as a refresher.</li>
+            <li><b>Central planning for AI:</b> the Chinese State Council released "A Next Generation Artificial Intelligence Development Plan" back in July, which highlights 8 core technologies it aims to build worth the read – <a href='https://na-production.s3.amazonaws.com/documents/translation-fulltext-8.1.17.pdf'>see page 9 here.</a></li>
+        </ul>
+        <br>
+        <table style="box-sizing:border-box;border-collapse:collapse;display:block;width:888px;overflow:auto;word-break:keep-all;color:rgb(51,51,51);font-size:16px;margin-top:0px;margin-bottom:0px">
+            <thead style="box-sizing:border-box">
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">n</font>
+                    </th>
+                    <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Title</font>
+                    </th>
+                    <th style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Author(s)</font>
+                    </th>
+                </tr>
+            </thead>
+            <tbody style="box-sizing:border-box">
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">1</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.03845v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.03845v1&amp;source=gmail&amp;ust=1511450758048000&amp;usg=AFQjCNEr7R4axNsvB6Yndb-lfam6nlA77A">
+                            <font size="2">GPflowOpt: A Bayesian Optimization Library using TensorFlow</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Knudde et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">2</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.05477v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.05477v1&amp;source=gmail&amp;ust=1511450758048000&amp;usg=AFQjCNH5SOWkQ5VLXsw4DR8gaRzoClvZSw">
+                            <font size="2">A Convex Parametrization of a New Class of Universal Kernel Functions for use in Kernel Learning</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Colbert &amp; Peet</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">3</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.05363v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.05363v1&amp;source=gmail&amp;ust=1511450758048000&amp;usg=AFQjCNGnuww5Ewzu4PDgM--ExFW7N-rhkA">
+                            <font size="2">Kernel Conditional Exponential Family</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Arbel &amp; Gretton</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">4</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.04994v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.04994v1&amp;source=gmail&amp;ust=1511450758048000&amp;usg=AFQjCNHLrGqIoEg2WEYwZyrEDl3aEXki_w">
+                            <font size="2">Prediction Under Uncertainty with Error-Encoding Networks</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Henaff et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">5</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.04574v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.04574v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNEUbuKoadL9pLca3b5qj_bgC21kWQ">
+                            <font size="2">Learning Explanatory Rules from Noisy Data</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Evans &amp; Grefenstette</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">6</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.04340v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.04340v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNEGklk7Y36xRLs0VGXxQSN35kwTug">
+                            <font size="2">Data Augmentation Generative Adversarial Networks</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Antoniou et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">7</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1709.01507v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1709.01507v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNHOmbnSuLyvLp21fJXcgkZ21YqDrg">
+                            <font size="2">Squeeze-and-Excitation Networks</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Hu et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">8</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.03946v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.03946v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNGaUnRUvsvp8wNBaJVPNkhi5yuC4g">
+                            <font size="2">Bayesian Paragraph Vectors</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Ji et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">9</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.04755v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.04755v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNEW1UXgfXTFqWRtDgd1eaDvH5A60A">
+                            <font size="2">ACtuAL: Actor-Critic Under Adversarial Learning</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Goyal et al.</font>
+                    </td>
+                </tr>
+                <tr style="box-sizing:border-box;background-color:rgb(248,248,248);border-top:1px solid rgb(204,204,204)">
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">10</font>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <a href="https://arxiv.org/abs/1711.05355v1" rel="nofollow" style="box-sizing:border-box;background-color:transparent;color:rgb(64,120,192);text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://arxiv.org/abs/1711.05355v1&amp;source=gmail&amp;ust=1511450758049000&amp;usg=AFQjCNE_bXWAVUeb9mBD23sMi675Mwm-VQ">
+                            <font size="2">Automatic Conflict Detection in Police Body-Worn Video</font>
+                        </a>
+                    </td>
+                    <td style="box-sizing:border-box;padding:6px 13px;border:1px solid rgb(221,221,221)">
+                        <font size="2">Letcher et al.</font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
 <script>
-    $('a').tooltip();
+$('a').tooltip();
 </script>
+
 </html>
