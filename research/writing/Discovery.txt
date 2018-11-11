@@ -1,0 +1,16 @@
+Discovery
+
+
+In a tweet: developed a prototype augmentation, embedding, and ensemble method diabetes prediction model for an insurance company serving 4 million clients.
+
+[ Slide deck ]
+
+Challenge: Discovery came to RAIL seeking to leverage their data to better predict diabetes so that pateints can be cared for before it becomes a problem. This is a win-win-win for the patient, an resource-constrained healthcare system, and the insurer. The modelling challenge is low-incidence of diabetes onset and the need for explainability in face of both a highly regulated industry and human-machine decisionmaking.
+
+[ Pipeline ]
+
+Solution: Due to the low incidence, we first used SMOTE to generate synthetic samples. I validated the prediction uplift of SMOTE using cross-validation; in this case, using synthetic samples (a version of data augmentation) is indeed useful. I then built out several classifiers, before ultimately settling on CatBoost, a gradient-boosting technique with improved performance for mixed categorical-continuous data. It was clear that the biggest limitation was limited data, so I developed a data acquisition strategy for the company.
+
+[ Results ]
+
+Results: not only did we allow the client to think through its data acquistion and modelling pipeline better, but our model was able to match and slightly outperform what internal models were producing.

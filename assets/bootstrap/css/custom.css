@@ -10,12 +10,21 @@ body {
     color: #333;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif, 'Helvetica';
     margin: 0 auto !important;
-    padding-top: 5%;
+    /*padding-top: 5%;*/
 }
 
 .row {
     margin-left: none !important;
     margin-right: none !important;
+}
+
+.main-content {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main-content-inner {
+    padding-top: 5%;
 }
 
 .description {
@@ -62,11 +71,11 @@ a.read-more:hover {
     font-weight: 500;
 }
 
-a:hover{
+/*a:hover{
     background-color: #337ab7;
     color: white;
     text-decoration: none;
-}
+}*/
 
 a.read-more:hover {
     background-color: rgba(240, 118, 47, 1);
@@ -125,9 +134,36 @@ a.read-more:hover {
     /* display: table-cell;    */
 }
 
+.research-section{
+    margin-bottom: 60px;
+}
+
+.research-image-column{
+    text-align: center;
+}
+
+.research-title{
+    text-decoration: underline;
+}
+
+.research-image {
+    max-width: 100% !important;
+    max-height: 100px !important;
+}
+
+.in-progress {
+    color: rgba(240, 118, 47, 1);
+}
+
 .portfolio-item {
     margin-bottom: 25px;
 }
+
+.project-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 footer {
     margin: 50px 0;
@@ -173,4 +209,3 @@ footer {
     text-align: right;
     }
 }
-

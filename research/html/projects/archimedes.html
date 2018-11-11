@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Archimedes | Logan Graham</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/custom.css">
+    </head>
+    <body>
+        <div class='row main-content container'>
+            <div class='container inner-content'>
+
+
+            <h4 class='research-title'>Archimedes: Curiousity-Driven Bayesian Optimization with Joint Active Causal Learning <span class='in-progress'>(In Progress)</span></h4>
+
+            <div class='col-sm-10'>
+                <div class='row project-section'>
+                    <b>In a tweet:</b> by jointly learning how to maximize the objective function (Bayesian Optimization) as well as the Structural Causal Model (active learning) you can speed up Bayesian optimization in terms of number of samples needed.
+                </div>
+
+                <!-- [Image: 3-dimensional surface with gradients, volatility, and uncertainty.] -->
+
+                <div class='row project-section'>
+                    <b>Challenge:</b> Bayesian Optimization is an incredibly useful optimization tool, but can be computationally expensive due to O(N^3) updating. We wish to guide active learning optimally. The causal data generating process of the data contains valuable information that we might use, but no BO model takes this into account.
+                </div>
+
+                [Dashboard]
+                <div class='row project-section'>
+                    <b>Solution:</b> by learning a Structural Causal Model at the same as Bayesian Optimization, we can set a tradeoff between sampling for optimization and sampling for causal understanding.
+                </div>
+                <div class='row project-section'>
+                    <b>Results:</b> forthcoming. Particular applications to expensive, low-data regimes with causal structures: scientific discovery, control processes, consumer behaviour, policymaking, etc. Long-term, I hope this to be useful in reinforcement learning, so that agents maximize total reward by a combination of following optimal reward-driven policies as well as curiousity policies that learn the DGP.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- <h3>This is where the title goes</h3> -->

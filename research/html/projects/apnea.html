@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sleep Apnea | Logan Graham</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/custom.css">
+    </head>
+    <body>
+        <div class='row main-content container'>
+            <div class='container inner-content'>
+
+
+            <h4 class='research-title'>Machine Learning-based Pediatric Sleep Apnea Prioritization Benchmarking</h4>
+
+            [ Graphic: patient questionnaire --> model --> priority score ]
+
+            <div class='col-sm-10'>
+                <div class='row project-section'>
+                    <b>In a tweet:</b> using out-of-the-box machine learning approaches, we show we can outperform the current state of the art in fast-paced patient risk prioritization in predicting if a child has sleep apnea or not.
+                </div>
+
+                <div class='row project-section'>
+                    <b>Challenge:</b> partnering with the School of Medicine at the University of Maryland-Baltimore, we explored if we could improve on the current in-person tests to prioritize pediatric sleep apnea cases. Currently, a nurse or doctor asks a series of questions and generates a point score estimating the likelihood the patient has sleep apnea or needs testing. This testing is extremely costly (~$3B/year total spent) and time consuming (takes a 12+ hour hospital stay). If we could develop a machine learning tool that prioritizes high-risk cases better using only information available to the nurse, we are more likely to get kids the care they need.
+                </div>
+
+                [ Model pipeline ]
+
+                <div class='row project-section'>
+                    <b>Solution:</b> working with small (~450 observation) datasets, we used simple feature engineering and dimensionality reduction to increase the robustness of kernel-based classifiers. On k-fold cross validation, our method outperformed other low-data-regime classifiers as well as the current state-of-the-art of  points score-based human heuristic tests.
+                </div>
+
+                [ ROC Curve ]
+
+                <div class='row project-section'>
+                    <b>Results:</b> We're able to outperform leading human doctor heuristics for patient prioritization. One advantage is this could be based entirely on data collected by a nurse or trained person at home, democratizing patient care prioritization. Results are motivating an application for wider-scale studies, across many thousands of patients at multiple sleep centres.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- <h3>This is where the title goes</h3> -->

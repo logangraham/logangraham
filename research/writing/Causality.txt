@@ -1,0 +1,14 @@
+Causality Review Paper
+
+
+In a tweet: ML researchers have turned tremendous interest towards causality. I wrote a review paper detailing the latest research on how tools from causality are improving learning, efficiency, and generalization in machine learning tasks.
+
+Challenge: Causality, among other topics, is one of the quickest growing subfields in machine learning. For various statistical and philosophical reasons is has a close relationship to intelligence. However, most research is tackling how to use ML to perform causal inference. I believed the reverse to be underrated, so I set out to document how machine learning researchers can use tools from causality to improve learning.
+
+Solution:
+- Review paper
+- Generalization
+- Efficiency
+- Future research areas
+
+See also: arXausality, blog post

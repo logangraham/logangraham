@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hippocrates | Logan Graham</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/custom.css">
+    </head>
+    <body>
+        <div class='row main-content container'>
+            <div class='container inner-content'>
+
+
+            <h4 class='research-title'>Hippocrates: Time-Dynamic Synthetic Controls for Counterfactual Inference <span class='in-progress'>(In Progress)</span></h4>
+
+            <div class='col-sm-10'>
+                <div class='row project-section'>
+                    <b>In a tweet:</b> I'm building a tool to generate time-dynamic synthetic controls. This exploits information of control units post-treatment to estimate the treatment counterfactual.
+                </div>
+
+                <!-- [Image: 3-dimensional surface with gradients, volatility, and uncertainty.] -->
+
+                <div class='row project-section'>
+                    <b>Challenge:</b> To do causal inference, you often want to posit a "counterfactual" -- what would have happened to some unit (patient, country, etc.) if they'd received a different treatment. Synthetic controls estimate the counterfactual by learning a mapping from control "donor" units to the treated unit pre-treatment. However, this ignores post-treatment information, such as if donor units become more or less appropriate control group members. It turns out we can leverage post-treatment behaviour of the control units to estimate time-dynamic relationships after treatment, leading to more robust estimates of the counterfactual.
+                </div>
+
+                <div class='row project-section'>
+                    <b>Solution:</b> In the time series case, you can see the counterfactual estimation problem as a combination of missing data imputation and transfer learning problems. By using multitask Gaussian processes with a specific optimization regime, you can infer the synthetic control more accurately. This enables custom handling of control group surprises using priors over the kernels used.
+                </div>
+                <div class='row project-section'>
+                    <b>Results:</b> forthcoming. First results show (a) robustness to regime changes in donor units and (b) recovery of accurate synthetic controls.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- <h3>This is where the title goes</h3> -->

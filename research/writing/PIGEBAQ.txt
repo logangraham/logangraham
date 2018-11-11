@@ -1,0 +1,16 @@
+PIGEBAQ
+
+In a tweet: PIGEBaQ uses Bayesian Quadrature to probabilistically model average gradients over your input space and how certain you can be about them.
+
+[Image: 3-dimensional surface with gradients, volatility, and uncertainty.]
+
+Challenge: Let's say you're a CIO, policymaker, or computational health researcher. You have a lot of data and you fit any complex machine learning model you want over your input space with good predictive performance. Naturally, you probably want to know how your model changes over that space -- how much does one feature, on average, affect the outcome? How much does that feature's gradient change over the input space? How certain are you about that change?
+
+[ Dashboard ]
+
+Solution: Our insight is that Bayesian Quadrature is a natural tool for this interpretability task. Model your function with a Gaussian Process space, or sample from any arbitrary model you fit, and you can perform Bayesian Quadrature to get a useful suite of analytics:
+- your average gradient
+- the volatility of that average gradient
+- uncertainty about your average gradient -- or, where to sample next to be most certain about your average gradient.
+
+Results: this has several advantages over competing methods. Basic linear regression is the most common tool for gradient interpretability, but is limited by the linearity assumption. LIME only works for sample-based explanation. Using tools with autodifferentiation, like Tensorflow, is an analytic approximation. PIGEBaQ is a fully non-linear, probabilistic approach.

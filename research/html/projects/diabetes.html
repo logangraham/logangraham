@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diabetes Prediction | Logan Graham</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/bootstrap/css/custom.css">
+    </head>
+    <body>
+        <div class='row main-content container'>
+            <div class='container inner-content'>
+
+
+            <h4 class='research-title'>Diabetes Onset Prediction using Data Augmentation & Ensemble Methods</h4>
+
+            [ ROC Curve ]
+
+            <div class='col-sm-10'>
+                <div class='row project-section'>
+                    <b>In a tweet:</b> developed a prototype augmentation, embedding, and ensemble method diabetes prediction model for an insurance company serving 4 million clients.
+                </div>
+
+                <div class='row project-section'>
+                    <b>Challenge:</b> a 4-million client health insurance company came to RAIL seeking to leverage their data to better predict diabetes so that patients can be cared for before it becomes a problem. This is a win-win-win for the patient, a resource-constrained healthcare system, and the insurer. The modelling challenge is low-incidence of diabetes onset and the need for explainability in face of both a highly regulated industry and human-machine decisionmaking.
+                </div>
+
+                [ Model pipeline ]
+
+                <div class='row project-section'>
+                    <b>Solution:</b> Due to the low incidence, we first used SMOTE to generate synthetic samples. I validated the prediction uplift of SMOTE using cross-validation; in this case, using synthetic samples (a version of data augmentation) is indeed useful. I then built out several classifiers, before ultimately settling on CatBoost, a gradient-boosting technique with improved performance for mixed categorical-continuous data. It was clear that the biggest limitation was limited data, so I developed a data acquisition strategy for the company.
+                </div>
+
+                <div class='row project-section'>
+                    <b>Results:</b> not only did we allow the client to think through its data acquistion and modelling pipeline better, but our model was able to match and slightly outperform what internal benchmark models were producing.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- <h3>This is where the title goes</h3> -->

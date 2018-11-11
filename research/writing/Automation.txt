@@ -1,0 +1,15 @@
+AIES Paper
+
+In a tweet: we surveyed 150+ machine learning/robotics experts to collect 4500 datapoints on what work tasks are automatable today. We modeled the relationship between task skills, knowledge, and ability and the task automatability.
+
+[ Automation Lasagna Plots ]
+
+Challenge: despite alarm about automation, we don't have good data on what can be automated in the first place. Most approaches focus on occupations, which mistakes the unit of automation: tasks themselves. Further, collecting data to produce a general and nuanced taxonomy of automatability is very expensive.
+
+Solution: we collected a novel dataset and developed a bespoke machine learning approach to this computatational social science problem. We generated robust automatability labels by using a Bayesian technique to combine multiple uncertain classifiers' (expert labellers') estimates. Then, we found that an ordinal-likelihood Gaussian Process best modelled the challenge. We analyse results across work types, occupation groups, income, education. We discuss where the model most disagrees with ground truth labels, and use model gradients to determine the features that drive automatability the most.
+
+[ Income and Education ]
+
+Results: the first high-granularity activity automatability dataset of its kind covering every work activity performed by every occupation in the United States. We present the method and raw data for further research into what can be automated.
+
+[ Gradients table ]
