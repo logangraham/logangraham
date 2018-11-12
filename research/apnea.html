@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sleep Apnea | Logan Graham</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/custom.css">
+        <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    </head>
+    <body>
+        <div class='container-fluid main-content'>
+            <div w3-include-html="header.html"></div>
+            <div class="main-content-inner">
+                
+                <div class='row'>
+                    <div class='col-sm-2'>
+                    </div>
+                    <div class='col-sm-8'>
+                        <h4 class='research-title'>Machine Learning-based Pediatric Sleep Apnea Prioritization </h4>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>In a tweet</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>Using out-of-the-box machine learning approaches, we show we can outperform the current state of the art in fast-paced patient risk prioritization in predicting if a child has sleep apnea or not.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Challenge</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>Partnering with the School of Medicine at the University of Maryland-Baltimore, we explored if we could improve on the current in-person tests to prioritize pediatric sleep apnea cases. Currently, a nurse or doctor asks a series of questions and generates a point score estimating the likelihood the patient has sleep apnea or needs testing. This testing is extremely costly (~$3B/year total spent) and time consuming (takes a 12+ hour hospital stay). If we could develop a machine learning tool that prioritizes high-risk cases better using only information available to the nurse, we are more likely to get kids the care they need.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'></div>
+                    <div class='col-sm-8'>
+                        <img class='research-image-column research-image' src='assets/apnea.png'>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Solution</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>Working with small (~450 observation) datasets, we used simple feature engineering and dimensionality reduction to increase the robustness of kernel-based classifiers. On k-fold cross validation, our method outperformed other low-data-regime classifiers as well as the current state-of-the-art of  points score-based human heuristic tests.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Results</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>We're able to outperform leading human doctor heuristics for patient prioritization. One advantage is this could be based entirely on data collected by a nurse or trained person at home, democratizing patient care prioritization. Results are motivating an application for wider-scale studies, across many thousands of patients at multiple sleep centres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<script type="text/javascript">
+    w3IncludeHTML();
+</script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diabetes Prediction | Logan Graham</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/custom.css">
+        <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    </head>
+    <body>
+        <div class='container-fluid main-content'>
+            <div w3-include-html="header.html"></div>
+            <div class="main-content-inner">
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                    </div>
+                    <div class='col-sm-8'>
+                        <h4 class='research-title'>Diabetes Onset Prediction using Data Augmentation & Ensemble Methods</h4>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>In a tweet</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>developed a prototype augmentation, embedding, and ensemble method diabetes prediction model for an insurance company serving 4 million clients.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Challenge</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>A 4-million client health insurance company came to RAIL seeking to leverage their data to better predict diabetes so that patients can be cared for before it becomes a problem. This is a win-win-win for the patient, a resource-constrained healthcare system, and the insurer. The modelling challenge is low-incidence of diabetes onset and the need for explainability in face of both a highly regulated industry and human-machine decisionmaking.</p>
+                    </div>
+                </div>
+
+
+                <div class='row'>
+                    <div class='col-sm-2'></div>
+                    <div class='col-sm-8'>
+                        <img class='research-image-column research-image' src='assets/auto_occ.png'>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Solution</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>Due to the low incidence, we first used SMOTE to generate synthetic samples. I validated the prediction uplift of SMOTE using cross-validation; in this case, using synthetic samples (a version of data augmentation) is indeed useful. I then built out several classifiers, before ultimately settling on CatBoost, a gradient-boosting technique with improved performance for mixed categorical-continuous data. It was clear that the biggest limitation was limited data, so I developed a data acquisition strategy for the company.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Results</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>not only did we allow the client to think through its data acquistion and modelling pipeline better, but our model was able to match and slightly outperform what internal benchmark models were producing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<script type="text/javascript">
+    w3IncludeHTML();
+</script>
+</html>
+<!-- <h3>This is where the title goes</h3> -->

@@ -25,6 +25,8 @@ body {
 
 .main-content-inner {
     padding-top: 5%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .description {
@@ -65,6 +67,10 @@ body {
 .read-more, a.read-more:visited {
     color: rgba(240, 118, 47, 1);
     /*font-size: 15px;*/
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 a.read-more:hover {
@@ -139,7 +145,8 @@ a.read-more:hover {
 }
 
 .research-image-column{
-    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .research-title{
@@ -147,8 +154,17 @@ a.read-more:hover {
 }
 
 .research-image {
+    max-width: 40% !important;
+    max-height: 250px !important;
+}
+
+.research-thumbnail {
     max-width: 100% !important;
     max-height: 100px !important;
+}
+
+.research-thumbnail-column {
+    text-align: center;
 }
 
 .in-progress {

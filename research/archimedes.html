@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Archimedes | Logan Graham</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/custom.css">
+        <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    </head>
+    <body>
+        <div class='container-fluid main-content'>
+            <div w3-include-html="header.html"></div>
+            <div class="main-content-inner">
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                    </div>
+                    <div class='col-sm-8'>
+                        <h4 class='research-title'>Archimedes: Curiousity-Driven Bayesian Optimization with Joint Active Causal Learning <span class='in-progress'>(In Progress)</span></h4>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>In a tweet</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>by jointly learning how to maximize the objective function (Bayesian Optimization) as well as the Structural Causal Model (active learning) you can speed up Bayesian optimization in terms of number of samples needed.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Challenge</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>Bayesian Optimization is an incredibly useful optimization tool, but can be computationally expensive due to O(N^3) updating. We wish to guide active learning optimally. The causal data generating process of the data contains valuable information that we might use, but no BO model takes this into account.</p>
+                    </div>
+                </div>
+
+
+                <div class='row'>
+                    <div class='col-sm-2'></div>
+                    <div class='col-sm-8 research-image-column'>
+                        <img class='research-image' src='assets/auto_occ.png'>
+                        <img class='research-image' src='assets/auto_wa.png'>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Solution</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>by learning a Structural Causal Model at the same as Bayesian Optimization, we can set a tradeoff between sampling for optimization and sampling for causal understanding.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Results</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>forthcoming. Particular applications to expensive, low-data regimes with causal structures: scientific discovery, control processes, consumer behaviour, policymaking, etc. Long-term, I hope this to be useful in reinforcement learning, so that agents maximize total reward by a combination of following optimal reward-driven policies as well as curiousity policies that learn the DGP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<script type="text/javascript">
+    w3IncludeHTML();
+</script>
+</html>
+<!-- <h3>This is where the title goes</h3> -->

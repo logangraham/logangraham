@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PIGEBaQ | Logan Graham</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/custom.css">
+        <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    </head>
+    <body>
+        <div class='container-fluid main-content'>
+            <div w3-include-html="header.html"></div>
+            <div class="main-content-inner">
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                    </div>
+                    <div class='col-sm-8'>
+                        <h4 class='research-title'>PIGEBaQ: Principled Interpretation of Gradient Evaluations using Bayesian Quadrature</h4>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>In a tweet</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>PIGEBaQ uses Bayesian Quadrature to probabilistically model average gradients over your input space and how certain you can be about them. This is useful for interpreting the behaviour of black-box models.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Challenge</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>Let's say you're a CIO, policymaker, or computational health researcher. You have a lot of data and you fit any complex machine learning model you want over your input space with good predictive performance. Naturally, you probably want to know how your model changes over that space -- how much does one feature, on average, affect the outcome? How much does that feature's gradient change over the input space? How certain are you about that change?</p>
+                    </div>
+                </div>
+
+
+                <div class='row'>
+                    <div class='col-sm-2'></div>
+                    <div class='col-sm-8'>
+                        <img class='research-image-column research-image' src='assets/apnea.png'>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Solution</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>Our insight is that Bayesian Quadrature is a natural tool for this interpretability task. Bayesian Quadrature is a way of probabilistically modeling an integral, such as the one in the expectation of derivative. If you model your function with a Gaussian Process space, or sample from any arbitrary model you fit, and you can perform Bayesian Quadrature to get a useful suite of analytics.</p>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <h5>Results</h5>
+                    </div>
+                    <div class='col-sm-8'>
+                        <p>this has several advantages over competing methods. Basic linear regression is the most common tool for gradient interpretability, but is limited by the linearity assumption. LIME only works for sample-based explanation. Using tools with autodifferentiation, like Tensorflow, is an analytic approximation. PIGEBaQ is a fully non-linear, probabilistic approach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<script type="text/javascript">
+    w3IncludeHTML();
+</script>
+</html>
+<!-- <h3>This is where the title goes</h3> -->
