@@ -29,7 +29,7 @@
                         <h5>In a tweet</h5>
                     </div>
                     <div class='col-sm-8'>
-                        <p>by jointly learning how to maximize the objective function (Bayesian Optimization) as well as the Structural Causal Model (active learning) you can speed up Bayesian optimization in terms of number of samples needed.</p>
+                        <p>By jointly learning how to maximize the objective function (Bayesian Optimization) as well as an underlying Structural Causal Model (active learning) you can speed up Bayesian optimization in terms of number of samples needed to converge on the optimum.</p>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
                         <h5>Challenge</h5>
                     </div>
                     <div class='col-sm-8'>
-                        <p>Bayesian Optimization is an incredibly useful optimization tool, but can be computationally expensive due to O(N^3) updating. We wish to guide active learning optimally. The causal data generating process of the data contains valuable information that we might use, but no BO model takes this into account.</p>
+                        <p>Bayesian Optimization is a useful optimization tool, but can be computationally expensive due to O(N^3) updating. We wish to guide active learning optimally. The data generating process of the data contains valuable causal information that we might use, but no BO model explicitly takes this extra information into account.</p>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                         <h5>Solution</h5>
                     </div>
                     <div class='col-sm-8'>
-                        <p>by learning a Structural Causal Model at the same as Bayesian Optimization, we can set a tradeoff between sampling for optimization and sampling for causal understanding.</p>
+                        <p>By learning a Structural Causal Model at the same as Bayesian Optimization, we can set a tradeoff between sampling for optimization and sampling for causal understanding. I am working on two approaches: formulating a new acquisition function, and using multi-task GPs to share information across both tasks.</p>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                         <h5>Results</h5>
                     </div>
                     <div class='col-sm-8'>
-                        <p>forthcoming. Particular applications to expensive, low-data regimes with causal structures: scientific discovery, control processes, consumer behaviour, policymaking, etc. Long-term, I hope this to be useful in reinforcement learning, so that agents maximize total reward by a combination of following optimal reward-driven policies as well as curiousity policies that learn the DGP.</p>
+                        <p>Forthcoming. Particular applications to expensive, low-data regimes with causal structures: scientific discovery, control processes, consumer behaviour, policymaking, etc. Long-term, I hope this to be useful in reinforcement learning, so that agents maximize total reward by a combination of following optimal reward-driven policies as well as curiousity policies that learn the DGP.</p>
                     </div>
                 </div>
             </div>

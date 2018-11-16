@@ -38,7 +38,7 @@
                         <h5>Challenge</h5>
                     </div>
                     <div class='col-sm-8'>
-                        <p>To do causal inference, you often want to posit a "counterfactual" -- what would have happened to some unit (patient, country, etc.) if they'd received a different treatment. Synthetic controls estimate the counterfactual by learning a mapping from control "donor" units to the treated unit pre-treatment. However, this ignores post-treatment information, such as if donor units become more or less appropriate control group members. It turns out we can leverage post-treatment behaviour of the control units to estimate time-dynamic relationships after treatment, leading to more robust estimates of the counterfactual.</p>
+                        <p>To do causal inference, you often want to infer a "counterfactual" -- what would have happened to some unit (patient, country, etc.) if they'd received a different treatment. Synthetic controls estimate the counterfactual by learning a mapping from control "donor" units to the treated unit pre-treatment. However, this ignores post-treatment information, such as if donor units become more or less appropriate control group members. It turns out we can leverage post-treatment behaviour of the control units to estimate time-dynamic relationships after treatment, leading to more robust estimates of the counterfactual.</p>
                     </div>
                 </div>
 
@@ -55,7 +55,7 @@
                         <h5>Solution</h5>
                     </div>
                     <div class='col-sm-8'>
-                        <p>In the time series case, you can see the counterfactual estimation problem as a combination of missing data imputation and transfer learning problems. By using multitask Gaussian processes with a specific optimization regime, you can infer the synthetic control more accurately. This enables custom handling of control group surprises using priors over the kernels used.</p>
+                        <p>In the time series case, you can see the counterfactual estimation problem as a combination of a missing data problem and a transfer learning problem. By using multitask Gaussian processes with a specific optimization regime, you can infer the synthetic control more accurately. This enables custom handling of control group surprises using priors over the kernels used.</p>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@
                         <h5>Results</h5>
                     </div>
                     <div class='col-sm-8'>
-                        <p>forthcoming. First results show (a) robustness to regime changes in donor units and (b) recovery of accurate synthetic controls.</p>
+                        <p>Forthcoming. First results show (a) robustness to regime changes in donor units and (b) recovery of accurate synthetic controls.</p>
                     </div>
                 </div>
             </div>
