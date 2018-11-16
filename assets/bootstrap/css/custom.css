@@ -158,6 +158,11 @@ a.read-more:hover {
     max-height: 250px !important;
 }
 
+.research-image-large {
+    max-width: 70% !important;
+    max-height: 450px !important;
+}
+
 .research-thumbnail {
     max-width: 100% !important;
     max-height: 100px !important;
