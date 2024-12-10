@@ -1,0 +1,47 @@
+body {
+    font-family: "EB Garamond", Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 60%;
+    max-width: 1200px;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.main-content {
+    width: 100%;
+    text-align: left;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: calc(90% - 150px * (100vw - 400px) / 400);
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+} 

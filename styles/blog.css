@@ -1,0 +1,21 @@
+/* Override container width for blog posts */
+.container {
+    width: 50%;
+    max-width: 800px;
+}
+
+/* Add home button for blog posts */
+.home-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+} 
